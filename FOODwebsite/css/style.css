@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.book-food {
+  position: relative;
+  width: 100%;
+  height: 650px; /* Set desired height */
+  background: url(../images/bg/bg1.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed; /* Keeps the background fixed as you scroll */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.book-food::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Overlay with 20% opacity */
+  z-index: 1; /* Keeps the overlay below the content */
+  background-attachment: fixed; /* Keeps the overlay fixed as you scroll */
+}
+nav {
+  z-index: 10; /* Higher z-index so nav stays above the .book-food section */
+  position: relative;
+}
+.site-name{
+  color: white;
+  font-size: 150px;
+  font-family: 'Brush Script MT', cursive;
+  /* font-family: 'Berkshire Swash', handwriting; */
+
+}
+.food-content{
+  z-index: 10; /* Higher z-index so nav stays above the .book-food section */
+  position: relative;
+  }
+.para-1{
+  color: orange;
+  font-size: 30px;
+  font-family: 'Georgia', serif;
+}
+.about_head{
+  font-family: 'Brush Script MT', cursive;
+}
+.custom-class{
+  box-shadow:  0.3s ease;
+  
+}
+.custom-class:hover{
+  box-shadow: 0 15px 30px rgba(255, 220, 105, 0.7);
+  
+}
+.nav-item a:hover{
+  color:white;
+  background-color: orange;
+
+}
